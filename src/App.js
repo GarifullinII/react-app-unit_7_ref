@@ -1,8 +1,11 @@
 import './App.css';
 import React from 'react';
 import Child from './Child';
+// import ChildF from './ChildF';
 
 function App() {
+
+  // const refF = React.createRef();
 
   const refDiv = React.createRef();
   const refInput = React.createRef();
@@ -36,6 +39,7 @@ function App() {
       <div ref={refDiv}>Text</div>
       <input type="range" ref={refInput}/>
       <button onClick={changeHandlerRef}>Push</button>
+      {/* <ChildF ref={refF}/> */}
     </>
   ); 
 }
